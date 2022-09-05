@@ -15,7 +15,7 @@
   \**********************/
 /***/ (() => {
 
-eval("function generateRandomLetter() {\n  const alphabet = \"abcdefghijklmnopqrstuvwxyz\";\n\n  return alphabet[Math.floor(Math.random() * alphabet.length)];\n}\n\nfunction generateRandomNumber(){\n    return Math.floor(Math.random() * 10);\n}\n\nfunction generateLink(){\n    const char1 = generateRandomLetter();\n    const char2 = generateRandomLetter();\n    const num1 = generateRandomNumber();\n    const num2 = generateRandomNumber();\n    const num3 = generateRandomNumber();\n    const num4 = generateRandomNumber();\n\n    return `https://prnt.sc/${char1}${char2}${num1}${num2}${num3}${num4}`\n}\n\nconst frame = document.getElementById('prntscrnPage');\n\nprntscrnPage.href = generateLink();\n\nscrapePage(generateLink());\n\n//# sourceURL=webpack://webscraper/./src/index.js?");
+eval("function generateRandomLetter() {\n  const alphabet = \"abcdefghijklmnopqrstuvwxyz\";\n\n  return alphabet[Math.floor(Math.random() * alphabet.length)];\n}\n\nfunction generateRandomNumber(){\n    return Math.floor(Math.random() * 10);\n}\n\nfunction generateLink(){\n    const char1 = generateRandomLetter();\n    const char2 = generateRandomLetter();\n    const num1 = generateRandomNumber();\n    const num2 = generateRandomNumber();\n    const num3 = generateRandomNumber();\n    const num4 = generateRandomNumber();\n\n    return `https://prnt.sc/${char1}${char2}${num1}${num2}${num3}${num4}`\n}\n\nconst frame = document.getElementById('prntscrnPage');\n\nprntscrnPage.href = generateLink();\n\n//# sourceURL=webpack://webscraper/./src/index.js?");
 
 /***/ })
 
