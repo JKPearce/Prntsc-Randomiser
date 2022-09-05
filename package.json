@@ -19,5 +19,8 @@
   "homepage": "https://github.com/JKPearce/webscraper#readme",
   "dependencies": {
     "puppeteer": "^17.1.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.74.0"
   }
 }
