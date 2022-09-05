@@ -19,6 +19,9 @@ function generateLink(){
     return `https://prnt.sc/${char1}${char2}${num1}${num2}${num3}${num4}`
 }
 
-const frame = document.getElementById('prntscrnPage');
+const button = document.getElementById('newPageBtn');
 
-prntscrnPage.href = generateLink();
+button.addEventListener('click', () => {
+  const url = generateLink();
+  document.location.href = url;
+})
