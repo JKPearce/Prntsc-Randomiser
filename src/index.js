@@ -1,17 +1,3 @@
-const puppeteer = require('puppeteer');
-
-async function scrapePage(url){
-  const browser = await puppeteer.launch();
-  const page = await browser.newPage();
-  await page.goto(url);
-
-  const [el] = await page.$x('/html/body/div[3]/div/img');
-  const src = await el.getProperty('src');
-  const srcTxt = await src.jsonValue();
-  console.log(srcTxt);
-
-  browser.close();
-}
 function generateRandomLetter() {
   const alphabet = "abcdefghijklmnopqrstuvwxyz";
 
@@ -33,8 +19,8 @@ function generateLink(){
     return `https://prnt.sc/${char1}${char2}${num1}${num2}${num3}${num4}`
 }
 
-// const frame = document.getElementById('prntscrnPage');
+const frame = document.getElementById('prntscrnPage');
 
-// prntscrnPage.href = generateLink();
+prntscrnPage.href = generateLink();
 
 scrapePage(generateLink());
