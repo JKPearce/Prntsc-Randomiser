@@ -1,2 +1,3 @@
 # webscraper
-Scraping random https://prnt.sc/ links to get images and display 
+Goal: Scraping random https://prnt.sc/ links to get images and display 
+Current: A button going to a random prnt.sc image
