@@ -22,5 +22,3 @@ function generateLink(){
 const frame = document.getElementById('prntscrnPage');
 
 prntscrnPage.href = generateLink();
-
-scrapePage(generateLink());
